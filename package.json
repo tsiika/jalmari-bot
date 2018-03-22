@@ -16,8 +16,11 @@
   "author": "tsiika",
   "license": "ISC",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "discord.js": "^11.3.2",
     "nodemon": "^1.17.2",
-    "opusscript": "0.0.6"
+    "opusscript": "0.0.6",
+    "querystring": "^0.2.0",
+    "snekfetch": "^3.6.4"
   }
 }
