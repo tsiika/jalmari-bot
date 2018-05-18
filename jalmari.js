@@ -6,7 +6,7 @@ const snekfetch = require('snekfetch');
 const querystring = require('querystring');
 
 //Configuration file
-const config = require('./config.json');
+const config = require('./config/config.json');
 
 client.on("ready", () => {
     console.log("Jalmari is up and running!!");
@@ -37,6 +37,11 @@ client.on("message", (message) => {
     //RNG
     if(message.content.startsWith(config.prefix +"roll")) {
         message.channel.send("Numerosi on" + " " + rngtr);
+    };
+
+    //Olutta
+    if(message.content.startsWith(config.prefix +"olutta")) {
+        message.channel.send(config.olut);
     };
 
     //Fingerpori
